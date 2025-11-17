@@ -109,6 +109,26 @@
         <h2>Álvaro Allén Perlines</h2>
     </nav>
     <main>
+        <div class="tabla1">
+            <table class="bd">
+                <tr class="principal">
+                    <td>Archivo</td>
+                    <td>ED Script</td>
+                </tr>
+                <tr>
+                    <td>Script creación de base de datos y usuario</td>
+                    <td class="imagen"><a href="mostrarcodigo/script1.php"><img src="webroot/images/code.png"></a></td>
+                </tr>
+                <tr>
+                    <td>Script carga inicial de base de datos</td>
+                    <td class="imagen"><a href="mostrarcodigo/script2.php"><img src="webroot/images/code.png"></a></td>
+                </tr>
+                <tr>
+                    <td>Script borrado de base de datos y usuario</td>
+                    <td class="imagen"><a href="mostrarcodigo/script3.php"><img src="webroot/images/code.png"></a></td>
+                </tr>
+            </table>
+        </div>
         <div class="tabla2">
             <table class="ejer">
                 <tbody>
@@ -121,16 +141,19 @@
                         <td>0</td>
                         <td>Mostrar el contenido de las variables superglobales y phpinfo().</td>
                         <td class="imagen"><a href="codigoPHP/ejercicio0.php"><img src="webroot/images/play.png" alt="play.png"/></a></td>
+                        <td class="imagen"><a href="mostrarcodigo/codigo0.php"><img src="webroot/images/code.png" alt="code.png"></a></td>
                     </tr>
                     <tr>
                         <td>1</td>
                         <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header().</td>
                         <td class="imagen"><a href="codigoPHP/ejercicio1.php"></a></td>
+                        <td class="imagen"><a href="mostrarcodigo/codigo1.php"><img src="webroot/images/code.png" alt="code.png"></a></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header() y en el uso de una tabla "Usuario" de la base de datos (PDO)</td>
                         <td class="imagen"><a href="codigoPHP/ejercicio2.php"></a></td>
+                        <td class="imagen"><a href="mostrarcodigo/codigo2.php"><img src="webroot/images/code.png" alt="code.png"></a></td>
                     </tr>
                 </tbody>
             </table>

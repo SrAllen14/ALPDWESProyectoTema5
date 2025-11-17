@@ -11,10 +11,10 @@
 USE DBALPDWESProyectoTema5;
 
 
-INSERT INTO T01_Usuario (T01_CodUsuario,T01_Password,T01_DescUsuario,T01_ImagenUsuario) VALUES
-('useralva','paso','Alvaro Allen',null),
-('useraaa','paso','Mario Fernandez Lopez',null),
-('userbbb','paso','María Gonzalez Martin',null);
+INSERT INTO T01_Usuario (T01_CodUsuario,T01_Password,T01_DescUsuario, T01_FechaHoraUltimaConexion, T01_ImagenUsuario) VALUES
+('useralva',SHA2('paso', 256),'Alvaro Allen',NOW(),null),
+('useraaa',SHA2('paso', 256),'Mario Fernandez Lopez',NOW(),null),
+('userbbb',SHA2('paso', 256),'María Gonzalez Martin',NOW(),null);
 
 -- Insertamos en la tabla correspondiente cada uno de los valores por cada columna --
 INSERT INTO T02_Departamento VALUES
