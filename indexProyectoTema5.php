@@ -136,6 +136,7 @@
                         <td>Nº</td>
                         <td>Enunciado</td>
                         <td>Ejecutar</td>
+                        <td>Código</td>
                     </tr>
                     <tr>
                         <td>0</td>
