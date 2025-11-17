@@ -1,0 +1,148 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Indice general de la asignatura">
+    <meta name="author" content="Álvaro Allén Perlines">
+    <meta name="keywords" content="indice, daw1, edd">
+    <meta name="generator" content="visual studio code">
+    <title>Álvaro Allén Perlines</title>
+    <style>
+        
+        *{
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            align-items: center;
+            text-align: center;
+        }
+        
+        nav{
+            background-color: #456D96; 
+            color: white;
+        }
+        
+        div.tabla1{
+            margin:10px auto 10px auto;
+            padding: 10px;
+            width: 500px;
+            
+            border-radius: 20px;
+            background-color: white; 
+        }
+        
+        table.bd{
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+        
+        div.tabla2{
+            margin:10px auto 10px auto;
+            padding: 10px;
+            width: 1000px;
+            
+            border-radius: 20px;
+            background-color: white; 
+        }
+        
+        table.ejer{
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            
+        }
+        
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        
+        
+        .principal{
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        
+        
+        td{
+            height: auto;
+            width: auto;
+            border: 1px solid gray;
+        }
+        
+        .imagen{
+            height: 50px;
+            width: 50px;
+        }
+        
+        .ejer td:nth-of-type(1){
+            width: 50px;
+            text-align: center;
+        }
+        
+        footer{
+            margin: auto;
+            background-color: #456d96;
+            text-align: center;
+            align-content: center;
+            height: 10%;
+	    color: white;
+            
+            & a{
+               text-decoration: none; 
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>DWES - Tema 5</h2>
+        <h2>Desarrollo de aplicaciones Web</h2>
+        <h2>Álvaro Allén Perlines</h2>
+    </nav>
+    <main>
+        <div class="tabla2">
+            <table class="ejer">
+                <tbody>
+                    <tr class="principal">
+                        <td>Nº</td>
+                        <td>Enunciado</td>
+                        <td>Ejecutar</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>Mostrar el contenido de las variables superglobales y phpinfo().</td>
+                        <td class="imagen"><a href="codigoPHP/ejercicio0pdo.php"><img src="webroot/images/play.png" alt="play.png"></a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header().</td>
+                        <td class="imagen"><a href="codigoPHP/ejercicio2pdo.php"><img src="webroot/images/play.png" alt="play.png"></a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header() y en el uso de una tabla "Usuario" de la base de datos (PDO)</td>
+                        <td class="imagen"><a href="codigoPHP/ejercicio3pdo.php"><img src="webroot/images/play.png" alt="play.png"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="/index.html">
+           Álvaro Allén Perlines
+            </a>
+            <time datetime="2025-11-17">17-11-2025</time>
+        </div>
+    </footer>
+</body>
+</html>
