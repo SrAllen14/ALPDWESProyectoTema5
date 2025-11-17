@@ -40,4 +40,4 @@ CREATE TABLE IF NOT EXISTS T02_Departamento(
 CREATE USER IF NOT EXISTS 'userALPDWESProyectoTema5'@'%' IDENTIFIED BY 'paso';
 
 -- Le damos privilegios completos para poder crear, insertar, borrar y modificar tablas y datos --
-GRANT ALL ON DBALPDWESProyectoTema4.* TO 'userALPDWESProyectoTema5'@'%';
+GRANT ALL ON DBALPDWESProyectoTema5.* TO 'userALPDWESProyectoTema5'@'%';

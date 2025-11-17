@@ -147,13 +147,13 @@
                     <tr>
                         <td>1</td>
                         <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header().</td>
-                        <td class="imagen"><a href="codigoPHP/ejercicio1.php"></a></td>
+                        <td class="imagen"><a href="codigoPHP/ejercicio1.php"><img src="webroot/images/play.png" alt="play.png"/></a></td>
                         <td class="imagen"><a href="mostrarcodigo/codigo1.php"><img src="webroot/images/code.png" alt="code.png"></a></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header() y en el uso de una tabla "Usuario" de la base de datos (PDO)</td>
-                        <td class="imagen"><a href="codigoPHP/ejercicio2.php"></a></td>
+                        <td class="imagen"><a href="codigoPHP/ejercicio2.php"><img src="webroot/images/play.png" alt="play.png"/></a></td>
                         <td class="imagen"><a href="mostrarcodigo/codigo2.php"><img src="webroot/images/code.png" alt="code.png"></a></td>
                     </tr>
                 </tbody>
