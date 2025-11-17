@@ -106,16 +106,16 @@
                     try{
                         $miDB = new PDO(DSN, USERNAME, PASSWORD);
                         
-                        $sql = "SELECT T01_CodUsuario FROM T01_Usuario WHERE T01_CodUsuario = :usuario";
+                        $sql = "SELECT T01_CodUsuario, T01_Password FROM T01_Usuario WHERE T01_CodUsuario = :usuario";
                         $consultaPreparada = $miDB->prepare($sql);
                         
                         $consultaPreparada->bindParam(':usuario', $aRespuestas['user']);
+                        $consultaPreparada->execute();
                         
-                        $aBD = $consultaPreparada->execute();
+                        $aResultados = $consultaPreparada->fetch();
                         
-                        var_dump($aBD);
-                        if ($aRespuestas["user"] === "") {
-                            if (hash('sha256', $aRespuestas["pass"]) === $contrasenaUsuario) {
+                        if ($aRespuestas["user"] === $aResultados['T01_CodUsuario']) {
+                            if (hash('sha256', $aRespuestas["pass"]) === $aResultados['T01_Password']) {
                                 // En caso de que la contraseña sea correcta saludamos al usuario.
                                 print('<br><h3>Bienvenido: ' . $aRespuestas["user"] . '</h3><br>');
                             } else {
