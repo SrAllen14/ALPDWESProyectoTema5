@@ -120,17 +120,17 @@
                     <tr>
                         <td>0</td>
                         <td>Mostrar el contenido de las variables superglobales y phpinfo().</td>
-                        <td class="imagen"><a href="codigoPHP/ejercicio0pdo.php"><img src="webroot/images/play.png" alt="play.png"></a></td>
+                        <td class="imagen"><a href="codigoPHP/ejercicio0.php"><img src="webroot/images/play.png" alt="play.png"/></a></td>
                     </tr>
                     <tr>
                         <td>1</td>
                         <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header().</td>
-                        <td class="imagen"><a href="codigoPHP/ejercicio2pdo.php"><img src="webroot/images/play.png" alt="play.png"></a></td>
+                        <td class="imagen"><a href="codigoPHP/ejercicio1.php"></a></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header() y en el uso de una tabla "Usuario" de la base de datos (PDO)</td>
-                        <td class="imagen"><a href="codigoPHP/ejercicio3pdo.php"><img src="webroot/images/play.png" alt="play.png"></a></td>
+                        <td class="imagen"><a href="codigoPHP/ejercicio2.php"></a></td>
                     </tr>
                 </tbody>
             </table>
