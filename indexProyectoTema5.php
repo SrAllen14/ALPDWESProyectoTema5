@@ -13,6 +13,8 @@
             padding: 0 auto;
         }
         body{
+            width: 1920px;
+            height: 1080px;
             font-family: Arial, sans-serif;
             background: #f4f6f9;
             align-items: center;

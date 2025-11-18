@@ -9,6 +9,8 @@
                 padding: 0 auto;
             }
             body{
+                width: 1920px;
+                height: 1080px;
                 font-family: Arial, sans-serif;
                 background: #f4f6f9;
                 align-items: center;
@@ -115,7 +117,7 @@
                         $aResultados = $consultaPreparada->fetch();
                         
                         if ($aRespuestas["user"] === $aResultados['T01_CodUsuario']) {
-                            if (hash('sha256', $aRespuestas["pass"]) === $aResultados['T01_Password']) {
+                            if (hash('sha256', $aRespuestas["user"]."".$aRespuestas["pass"]) === $aResultados['T01_Password']) {
                                 // En caso de que la contraseña sea correcta saludamos al usuario.
                                 print('<br><h3>Bienvenido: ' . $aRespuestas["user"] . '</h3><br>');
                             } else {
