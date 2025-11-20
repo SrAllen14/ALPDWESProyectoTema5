@@ -3,8 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Indice general de la asignatura">
     <meta name="author" content="Álvaro Allén Perlines">
-    <meta name="keywords" content="indice, daw1, edd">
-    <meta name="generator" content="visual studio code">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Álvaro Allén Perlines</title>
     <style>
         
@@ -24,19 +23,21 @@
         nav{
             background-color: #456D96; 
             color: white;
+            height: 72px;
+            line-height: 72px;
         }
         
         div.tabla1{
             margin:10px auto 10px auto;
             padding: 10px;
-            width: 500px;
+            width: 750px;
             
             border-radius: 20px;
             background-color: white; 
         }
         
         table.bd{
-            width: 400px;
+            width: 650px;
             margin-left: auto;
             margin-right: auto;
             border-collapse: collapse;
@@ -45,14 +46,14 @@
         div.tabla2{
             margin:10px auto 10px auto;
             padding: 10px;
-            width: 1000px;
+            width: 1500px;
             
             border-radius: 20px;
             background-color: white; 
         }
         
         table.ejer{
-            width: 900px;
+            width: 1400px;
             margin-left: auto;
             margin-right: auto;
             border-collapse: collapse;
@@ -79,8 +80,13 @@
         }
         
         .imagen{
+            text-align: center;
             height: 50px;
             width: 50px;
+            img{
+                height: 100%;
+                width: 100%;
+            }
         }
         
         .ejer td:nth-of-type(1){
@@ -99,6 +105,12 @@
             & a{
                text-decoration: none; 
             }
+            
+            i{
+                width: 10px;
+                height: 10px;
+                color: white;
+            }
         }
         
 
@@ -106,9 +118,7 @@
 </head>
 <body>
     <nav>
-        <h2>DWES - Tema 5</h2>
-        <h2>Desarrollo de aplicaciones Web</h2>
-        <h2>Álvaro Allén Perlines</h2>
+        <h2>Proyecto Tema 5</h2>
     </nav>
     <main>
         <div class="tabla1">
@@ -116,18 +126,30 @@
                 <tr class="principal">
                     <td>Archivo</td>
                     <td>ED Script</td>
+                    <td>EE Script</td>
+                    <td>Archivos externos</td>
+                    <td>Script</td>
                 </tr>
                 <tr>
                     <td>Script creación de base de datos y usuario</td>
                     <td class="imagen"><a href="mostrarcodigo/script1.php"><img src="webroot/images/code.png"></a></td>
+                    <td rowspan="2" class="imagen"><a href="mostrarcodigo/script1.php"><img src="webroot/images/code.png"></td>
+                    <td>Biblioteca Validación</td>
+                    <td class="imagen"><a href="mostrarcodigo/libreriaValidacion.php"><img src="webroot/images/code.png"></a></td>
+                    
                 </tr>
                 <tr>
                     <td>Script carga inicial de base de datos</td>
                     <td class="imagen"><a href="mostrarcodigo/script2.php"><img src="webroot/images/code.png"></a></td>
+                    <td>Biblioteca Personal</td>
+                    <td class="imagen"><a href="mostrarcodigo/libreriaPersonal.php"><img src="webroot/images/code.png"></a></td>
+                    
                 </tr>
                 <tr>
                     <td>Script borrado de base de datos y usuario</td>
-                    <td class="imagen"><a href="mostrarcodigo/script3.php"><img src="webroot/images/code.png"></a></td>
+                    <td colspan="2" class="imagen"><a href="mostrarcodigo/script3.php"><img src="webroot/images/code.png"></a></td>
+                    <td>Archivo configuración BD</td>
+                    <td class="imagen"><a href="mostrarcodigo/conf.php"><img src="webroot/images/code.png"></a></td>
                 </tr>
             </table>
         </div>
@@ -167,7 +189,8 @@
             <a href="/index.html">
            Álvaro Allén Perlines
             </a>
-            <time datetime="2025-11-17">17-11-2025</time>
+            <time datetime="2025-11-20">20-11-2025</time>
+            <a href="https://github.com/SrAllen14/ALPDWESProyectoTema5/tree/master" target="blank"><i class="fa-brands fa-github fa-2x"></i></a>
         </div>
     </footer>
 </body>
