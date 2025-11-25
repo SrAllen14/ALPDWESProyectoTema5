@@ -133,7 +133,7 @@
                 <tr>
                     <td>Script creación de base de datos y usuario</td>
                     <td class="imagen"><a href="mostrarcodigo/script1.php"><img src="webroot/images/code.png"></a></td>
-                    <td rowspan="2" class="imagen"><a href="mostrarcodigo/script1.php"><img src="webroot/images/code.png"></td>
+                    <td rowspan="2" class="imagen"><a href="mostrarcodigo/scriptEE.php"><img src="webroot/images/code.png"></a></td>
                     <td>Biblioteca Validación</td>
                     <td class="imagen"><a href="mostrarcodigo/libreriaValidacion.php"><img src="webroot/images/code.png"></a></td>
                     
