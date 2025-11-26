@@ -62,7 +62,23 @@
                  */
                 
                 
-                if(!isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER'] !== 'alvaro' || $_SERVER['PHP_AUTH_PW'] !== 'paso'){
+                $aUsuarios = [
+                    "admin" => [hash('sha256', 'paso'), "Alvaro Allen Perlines"],
+                    "heraclio" => [hash('sha256', 'paso'), "Heraclio Borbujo"]
+                ];
+                
+                $usuario = $_SERVER['PHP_AUTH_USER'];
+                $pass = $_SERVER['PHP_AUTH_PW'];
+                
+                if (!isset($usuario,$pass )) {
+                    header('WWW-Authenticate: Basic realm="Contenido restringido"');
+                    header('HTTP/1.0 401 Unauthorized');
+                    echo "Usuario no reconocido!";
+                    //es obligatorio exit
+                    exit;
+                }
+                
+                if(!isset($_SERVER['PHP_AUTH_USER']) || array_key_exists($usuario, $aUsuarios) || $aUsuarios[$usuario][0] !== hash('sha256',$pass)){
                     header('WWW-Authenticate: Basic realm="Contenido restringido"');
                     
                     header('HTTP/1.0 401 Unauthorized');
@@ -74,7 +90,7 @@
                 ?>
                 
                 <h3>Acceso permitido</h3>
-                <p>Bienvenido <strong><?php echo $_SERVER['PHP_AUTH_USER']?></strong></p>
+                <p>Bienvenido <strong><?php echo $aUsuarios[$usuario][1]?></strong></p>
             </div>
         </main>
         <footer>
