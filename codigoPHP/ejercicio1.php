@@ -78,7 +78,7 @@
                     exit;
                 }
                 
-                if(!isset($_SERVER['PHP_AUTH_USER']) || array_key_exists($usuario, $aUsuarios) || $aUsuarios[$usuario][0] !== hash('sha256',$pass)){
+                if(!array_key_exists($usuario, $aUsuarios) || $aUsuarios[$usuario][0] !== hash('sha256',$pass)){
                     header('WWW-Authenticate: Basic realm="Contenido restringido"');
                     
                     header('HTTP/1.0 401 Unauthorized');
