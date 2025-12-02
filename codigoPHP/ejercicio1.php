@@ -61,29 +61,36 @@
                  * Control de acceso con identificación del usuario basado en la función header().
                  */
                 
-                
+                // Creamos un array con los nombres de usuario como clave y valor un array de dos elementos:
+                // 1. El resumen de la contraseña encriptada con sha256.
+                // 2. El nombre del usuario que será mostrado en caso de acceder a la página.
                 $aUsuarios = [
                     "admin" => [hash('sha256', 'paso'), "Alvaro Allen Perlines"],
                     "heraclio" => [hash('sha256', 'paso'), "Heraclio Borbujo"]
                 ];
                 
+                // Creamos dos variables que guardaran el usuario introducido en el campo 
+                // user del header y la contraseña introducida en el campo password del header.
                 $usuario = $_SERVER['PHP_AUTH_USER'];
                 $pass = $_SERVER['PHP_AUTH_PW'];
                 
                 if (!isset($usuario,$pass )) {
+                    // Ventana emergente que nos pide rellenar dos campos: usuario y contraseña.
                     header('WWW-Authenticate: Basic realm="Contenido restringido"');
+                    // Indica que la autenticación ha fallado y, por tanto, no puede pasar a la página.
                     header('HTTP/1.0 401 Unauthorized');
                     echo "Usuario no reconocido!";
-                    //es obligatorio exit
+                    // Es obligatorio exit para que te vuelva a pedir usuario y contraseña.
                     exit;
                 }
                 
                 if(!array_key_exists($usuario, $aUsuarios) || $aUsuarios[$usuario][0] !== hash('sha256',$pass)){
+                    // Ventana emergente que nos pide rellenar dos campos: usuario y contraseña.
                     header('WWW-Authenticate: Basic realm="Contenido restringido"');
-                    
+                    // Indica que la autenticación ha fallado y, por tanto, no puede pasar a la página.
                     header('HTTP/1.0 401 Unauthorized');
-                    
                     echo '<h3>Acceso denegado</h3>';
+                    // Es obligatorio exit para que te vuelva a pedir usuario y contraseña.
                     exit;
                 }
                 
